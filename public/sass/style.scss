@@ -1,3 +1,13 @@
+@import 'font-awesome/fontawesome';
+@import "~bootstrap/scss/bootstrap";
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/nav';
+
 body {
-  background: blue;
+  background: $cream;
+}
+
+a {
+  font-family: $regular;
 }

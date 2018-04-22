@@ -7,5 +7,21 @@ html(lang="en")
     link(rel="stylesheet", href="dist/style.css")
     title= title
   body
+    header.container-fluid
+      nav.row
+        .main-logo
+          img(src="images/main-logo.svg", alt="Main Logo")
+        .menu
+          .nav.nav-mobile
+            ul
+              each navItem in h.menu 
+                a.navItem(href=`${navItem.slug}`)
+                  li.text-center
+                    i(class=`${navItem.icon}`)
+                    br
+                    p.item-name= navItem.title
+                  
+
+
     footer  
       script(src="dist/main.bundle.js")
