@@ -1,0 +1,66 @@
+a {
+  font-family: $regular;
+  color: $dark-blue;
+  position: relative;
+
+  &:hover {
+    text-decoration: none;
+    color: $dark-blue;
+  }
+
+  &:after {
+    content: "";
+    border-bottom: 3px solid $dark-blue;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+h1 {
+  font-family: $regular;
+  @include fluid-type($min_width, $max_width, 20px, 40px);
+  line-height: 1.6em;
+}
+
+h2 {
+  font-family: $regular;
+  @include fluid-type($min_width, $max_width, 12px, 24px);
+  line-height: 1.4em;
+}
+
+p { 
+  font-family: $regular;
+  @include fluid-type($min_width, $max_width, 14px, 20px);
+  line-height: 1.5em;
+}
+
+.hide-lg {
+  @media( min-width: 768px) {
+    display: none;
+  }
+}
+
+main {
+  min-height: 80vh;
+}
+
+.hide-sm {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+
+label {
+  font-family: $regular;
+  font-size: 16px;
+}
+
+.btn-primary {
+  margin: 0 auto;
+  background: $dark-blue;
+  border: none;
+  font-family: $regular;
+}

@@ -11,6 +11,12 @@ nav {
   bottom: 0;
   left: 0;
   background: $black;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    position: unset;
+    width: 30vw;
+  }
 
   ul {
     display: flex;
@@ -25,6 +31,10 @@ nav {
     a {
       text-decoration: none;
       color: inherit;
+
+      &:after {
+        display: none;
+      }
       
       &:focus {
           outline: none;
@@ -35,11 +45,19 @@ nav {
 
         i {
           font-size: 1em;
+
+          @media (min-width: 768px) {
+            display: none;
+          }
+        }
+
+        br {
+          display: none;
         }
 
         p.item-name {
           margin: 0;
-          font-size: 11px;
+          @include fluid-type($min-width, $max-width, 11px, 18px);
         }
       }
     }
@@ -47,6 +65,10 @@ nav {
 }
 
 .main-logo {
+  a:after {
+    display: none;
+  }
+  
   img {
     height: 50px;
   }

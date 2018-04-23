@@ -21,8 +21,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', mainRoutes);
-//app.get('/admin', adminRoutes);
+app.use('/', mainRoutes);
+app.use('/admin', adminRoutes);
 
 
 

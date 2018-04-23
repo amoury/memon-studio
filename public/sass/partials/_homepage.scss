@@ -1,0 +1,8 @@
+.main-content {
+  margin-top: 35vh;
+  padding: 0 30px;
+
+  @media (min-width: 768px) {
+    padding: 0 100px;
+  }
+}

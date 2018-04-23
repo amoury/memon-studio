@@ -1,5 +1,5 @@
-#This is the Portfolio site of Ansar Memon (Amoury). 
-_Check the live website [click here](https://memon.studio), 2018_
+# This is the Portfolio site of Ansar Memon (Amoury). 
+_To view the live website [click here](https://memon.studio), 2018_
 
 ## Features
 This project uses - 

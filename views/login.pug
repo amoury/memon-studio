@@ -1,0 +1,20 @@
+extends index.pug
+
+block header
+
+
+block content
+  .main-form
+    form.login-form(action="")
+      .form-group
+        label(for="admin-username") Username
+        input.form-control(type="text" id="admin-username" name="admin-username")
+
+      
+      .form-group
+        label(for="admin-password") Password
+        input.form-control(type="password" id="admin-password" name="admin-password")
+
+      button.btn.btn-primary(type="submit") Submit
+
+        

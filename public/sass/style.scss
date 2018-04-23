@@ -2,12 +2,17 @@
 @import "~bootstrap/scss/bootstrap";
 @import 'partials/fonts';
 @import 'partials/variables';
+@import 'partials/general';
 @import 'partials/nav';
+@import 'partials/homepage';
+@import 'partials/aboutpage';
+@import 'partials/loginForm';
+
 
 body {
   background: $cream;
 }
 
-a {
-  font-family: $regular;
+footer {
+  margin-bottom: 100px;
 }

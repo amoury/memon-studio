@@ -7,19 +7,32 @@ html(lang="en")
     link(rel="stylesheet", href="dist/style.css")
     title= title
   body
-    header.container-fluid
-      nav.row
-        .main-logo
-          img(src="images/main-logo.svg", alt="Main Logo")
-        .menu
-          .nav.nav-mobile
-            ul
-              each navItem in h.menu 
-                a.navItem(href=`${navItem.slug}`)
-                  li.text-center
-                    i(class=`${navItem.icon}`)
-                    br
-                    p.item-name= navItem.title
+    block header
+      header.container-fluid
+        nav.row
+          .main-logo
+            a(href="/")
+              img(src="images/main-logo.svg", alt="Main Logo")
+          .menu
+            .nav.nav-mobile
+              ul
+                each navItem in h.menu 
+                  a.navItem(href=`${navItem.slug}` class=`navItem ${navItem.class}`)
+                    li.text-center
+                      i(class=`${navItem.icon}`)
+                      br
+                      p.item-name= navItem.title
+      
+
+    main.container-fluid
+      block content
+        .main-content
+          h1.text-center Welcome to the Studio of Ansar Memon aka Amoury!
+          br
+          p I’m one of the co-founders of <a href="#">The Raizuli</a> Design and Print Agency. We make prints using classic print techniques such as letterpress and silk screen. We specialise in luxury printing mainly catering to luxury wedding invitations and out of the box stationery and packaging solutions. 
+          p I recently launched <a href="/tutorials">tutorials</a> mainly to teach javascript and other related web technologies. Being a self taught Full stack developer, paid and free video tutorials have been an invaluable resource. These tutorials are my way of giving back to the community and will always keep my tutorials completely free of charge.
+          p I’m an entrepreneur, and a self-taught full-stack developer. I am passionate about programming and love working with Javascript. In terms of frontend, I am mainly drawn towards animations that improve the overall User Experience (UX).
+          p You  are welcome to browse around and check out some of my <a href="#">work</a>. To get in touch with me, the best choice would be to shoot me an <a href="mailto: ansar@theraizuli.com">email</a>.
                   
 
 

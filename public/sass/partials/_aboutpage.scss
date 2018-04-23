@@ -1,0 +1,20 @@
+.social-box {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  .social-icons,
+  .resume-icon {
+    display: flex;
+    justify-content: space-evenly;
+    
+    a:after {
+      display: none;
+    }
+    
+    i {
+      font-size: 2.5em;
+    }
+  }
+}
